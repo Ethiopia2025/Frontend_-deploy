@@ -1,0 +1,39 @@
+.cart_product img{
+   width: 100px !important;
+}
+.cart_product{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 30px;
+}
+.container div{
+    height: auto;
+}
+h4{
+    margin: 15px 0;
+}
+.btn_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.subtotal{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.continue{
+    text-decoration: none;
+    padding: 2px 10px;
+    background-color: rgb(255, 210, 12);
+    color: black;
+    border-radius: 3px;
+}
+

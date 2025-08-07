@@ -1,0 +1,22 @@
+.container{
+    padding: 25px;
+    background-color: aliceblue;
+}
+.order_container{
+    padding: 20px;
+    background-color: white;
+}
+.order_container h2{
+    border-bottom: 2px solid rgb(250, 250, 10);
+    padding: 20px 0;
+    /* text-align: center; */
+}
+.order_container p{
+    padding: 10px 0;
+}
+.order_container img{
+    width: 100px !important;
+}
+.order_container div{
+    height: auto !important;
+}

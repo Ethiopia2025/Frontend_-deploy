@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px 0px;
+}
+.deliver h3{
+  min-width: 400px;
+  padding: 30px;
+}
+.payment_container{
+    margin: 20px;
+}
+.deliver{
+    display: flex;
+}
+.deliver div{
+    padding-top: 20px;
+    height: auto !important;
+}
+.deliver img{
+    width: 100px !important;
+}

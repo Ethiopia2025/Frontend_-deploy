@@ -1,0 +1,163 @@
+.header_container{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* Overall container for the header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921; /* Dark blue background */
+    color: white;
+    padding: 10px 20px;
+    min-height: 60px; /* Adjust as needed */
+  }
+  
+  /* Left side of the header */
+  .left_container {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between logo and location */
+  }
+  
+  .left_container a img {
+    width: 100px; /* Amazon logo width */
+    margin-top: 5px; /* Adjust vertical alignment */
+  }
+  
+  .location_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .location_container p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .location_container span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Middle container (search bar) */
+  .middle_container {
+    display: flex;
+    flex-grow: 0.85; /* Allows it to take up available space */
+    margin: 0 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures borders are respected */
+  }
+  
+  .middle_container select {
+    padding: 8px;
+    border: none;
+    background-color: #e6e6e6; /* Light gray for select */
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .middle_container input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  .search{
+    background-color: orange;
+    /* padding: 10px; */
+    align-items: center;
+    color: black;
+  }
+  
+  .middle_container .MuiSvgIcon-root { /* Styling for the search icon */
+    background-color: #febd69; /* Amazon's orange */
+    color: #131921;
+    padding: 8px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Right side of the header */
+  .right_container {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between elements */
+  }
+  
+  .right_container > div { /* For language selector and sign-in */
+    display: flex;
+    align-items: center;
+  }
+  
+  .right_container img {
+    width: 20px; /* Flag icon size */
+    margin-right: 5px;
+  }
+  
+  .right_container select {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .right_container a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .right_container a p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .right_container a span {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .order_container {
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  .right_container .MuiSvgIcon-root { /* Styling for cart icon */
+    font-size: 30px; /* Adjust size as needed */
+  }
+  
+  /* Lower header (assuming it's another component, you'd style it in its own CSS module) */
+ .lower_header_container ul {
+  display: flex;
+    background-color: #232f3e;
+    padding: 3px 15px;
+    color: white;
+    font-size: 14px;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+  } 
+  .lower_header_container ul li{
+    display: flex;
+    align-items: center;
+  }
+ .cart{
+  position: relative;
+ }
+ .cart span{
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: black;
+  color: #febd69;
+ }

@@ -1,0 +1,85 @@
+[debug] [2025-08-07T08:57:32.350Z] ----------------------------------------------------------------------
+[debug] [2025-08-07T08:57:32.354Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\new\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-08-07T08:57:32.354Z] CLI Version:   14.11.2
+[debug] [2025-08-07T08:57:32.354Z] Platform:      win32
+[debug] [2025-08-07T08:57:32.355Z] Node Version:  v20.19.4
+[debug] [2025-08-07T08:57:32.355Z] Time:          Thu Aug 07 2025 11:57:32 GMT+0300 (East Africa Time)
+[debug] [2025-08-07T08:57:32.355Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-07T08:57:32.913Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-07T08:57:32.914Z] > authorizing via signed-in user (woldeyosef141@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-08-07T08:57:32.949Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-08-07T08:57:32.950Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-08-07T08:57:32.968Z] [hub] writing locator at C:\Users\new\AppData\Local\Temp\hub-ethiopia-e67f1.json
+[debug] [2025-08-07T08:57:33.005Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-08-07T08:57:33.006Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-08-07T08:57:33.006Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-08-07T08:57:33.006Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-08-07T08:57:33.030Z] defaultcredentials: writing to file C:\Users\new\AppData\Roaming\firebase\woldeyosef141_gmail_com_application_default_credentials.json
+[debug] [2025-08-07T08:57:33.032Z] Setting GAC to C:\Users\new\AppData\Roaming\firebase\woldeyosef141_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\new\\AppData\\Roaming\\firebase\\woldeyosef141_gmail_com_application_default_credentials.json"}}
+[debug] [2025-08-07T08:57:33.033Z] Checked if tokens are valid: true, expires at: 1754560564469
+[debug] [2025-08-07T08:57:33.034Z] Checked if tokens are valid: true, expires at: 1754560564469
+[debug] [2025-08-07T08:57:33.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ethiopia-e67f1/adminSdkConfig [none]
+[debug] [2025-08-07T08:57:33.601Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ethiopia-e67f1/adminSdkConfig 200
+[debug] [2025-08-07T08:57:33.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ethiopia-e67f1/adminSdkConfig {"projectId":"ethiopia-e67f1","storageBucket":"ethiopia-e67f1.firebasestorage.app"}
+[info] i  functions: Watching "C:\Users\new\Documents\abebe\ethiopia\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\new\\Documents\\abebe\\ethiopia\\functions\" for Cloud Functions..."}}
+[debug] [2025-08-07T08:57:33.919Z] Validating nodejs source
+[debug] [2025-08-07T08:57:36.032Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-08-07T08:57:36.032Z] Building nodejs source
+[debug] [2025-08-07T08:57:36.033Z] Failed to find version of module node: reached end of search path C:\Users\new\Documents\abebe\ethiopia\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-08-07T08:57:36.041Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-08-07T08:57:36.055Z] Found firebase-functions binary at 'C:\Users\new\Documents\abebe\ethiopia\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8092
+
+[info] [dotenv@17.2.1] injecting env (1) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+
+[debug] [2025-08-07T08:57:38.005Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":10,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/ethiopia-e67f1/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/ethiopia-e67f1/us-central1/api)."}}
+[debug] [2025-08-07T08:57:42.130Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

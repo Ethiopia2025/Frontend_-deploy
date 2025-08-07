@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1280px;
+    margin: 100px auto; /* Corrected shorthand for vertical and horizontal margin */
+    gap: 30px;
+    justify-items: center;
+}
